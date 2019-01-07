@@ -4,10 +4,11 @@ body {
     letter-spacing: .035em;
     line-height: 1.7em;
     color: #1f2538;
+    background-color: #fff;
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 400;
 }
 
@@ -34,10 +35,21 @@ h1 {
     height: 100vh;
     object-fit: cover;
     padding-bottom: 7.5rem;
+    background-color: #f2f5f6;
 }
 
 
 /* Resume */
+
+.resume-wrapper {
+    background-color: #f2f5f6;
+}
+
+.resume-title,
+.contact-title {
+    font-weight: 500;
+    padding-bottom: 2rem;
+}
 
 .resume-desc,
 .sub {
@@ -69,4 +81,128 @@ h1 {
 
 .btn-dark:focus {
     box-shadow: none;
+}
+
+
+/* Contact */
+
+.contact-wrapper,
+.portfolio-wrapper {
+    padding-top: 8rem;
+}
+
+.sub-text {
+    margin-top: 1rem;
+}
+
+.sub-text a {
+    color: #1a1f2d;
+}
+
+.sub-text a:hover {
+    text-decoration: none;
+}
+
+.contact-info {
+    padding: 0.75rem;
+    background: linear-gradient( to bottom, #1a1f2d 0%, #1a1f2d 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    color: #1a1f2d;
+    text-decoration: none;
+    transition: background-size .2s;
+}
+
+.contact-info:hover {
+    background-size: 4px 50px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.download-button {
+    width: 100%;
+    margin-left: 0.9375rem;
+}
+
+.linkedin {
+    padding-bottom: 1rem;
+}
+
+
+/* Portfolio */
+
+.portfolio-wrapper {
+    background-color: #f2f5f6;
+    padding-bottom: 8rem;
+}
+
+.portfolio-img {
+    object-fit: cover;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.portfolio-img:hover {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+.portfolio-title {
+    font-size: 1.2rem;
+    padding-bottom: 8rem;
+}
+
+i {
+    color: #1a1f2d;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.portfolio-title a:hover {
+    text-decoration: none;
+}
+
+.portfolio-title a:hover .fa-twitter {
+    color: #1da1f2;
+}
+
+.portfolio-title a:hover .fa-facebook-f {
+    color: #3b5998;
+}
+
+.portfolio-title a:hover .fa-instagram {
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 992px) {
+    /* For mobile phones: */
+    .header-title {
+        font-size: 2.1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* For tablets: */
+    .header-title {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    /* For mobile phones: */
+    .header-title {
+        font-size: 1.4rem;
+    }
 }
